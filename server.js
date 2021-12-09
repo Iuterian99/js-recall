@@ -27,6 +27,19 @@
 
 // console.log(salom("saloM"));
 
+const weightMark = 48;
+const heightMark = 1.69;
+const weightJohn = 92;
+const heightJohn = 1.95;
+const BmiMark = weightMark / heightMark ** 2;
+const BmiJohn = weightJohn / heightJohn ** 2;
 
-const weightMark = 78;
-const  heightMark = 1.69
+if (BmiMark > BmiJohn) {
+  console.log(
+    "Mark`s BMI(" + BmiMark + ") is higher than John`s(" + BmiJohn + ")"
+  );
+} else {
+  console.log(
+    "John`s BMI(" + BmiJohn + ") is higher than Mark`s(" + BmiMark + ")"
+  );
+}
