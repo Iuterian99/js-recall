@@ -44,33 +44,62 @@
 //   );
 // }
 
-const DolphinsFirstScore = 97;
-const DolphinsSecondScore = 112;
-const DolphinsThirdScore = 101;
-const delphinsAverageScore =
-  (DolphinsFirstScore + DolphinsSecondScore + DolphinsThirdScore) / 3;
+// const DolphinsFirstScore = 97;
+// const DolphinsSecondScore = 112;
+// const DolphinsThirdScore = 101;
+// const delphinsAverageScore =
+//   (DolphinsFirstScore + DolphinsSecondScore + DolphinsThirdScore) / 3;
 
-const CaolasFirstScore = 109;
-const CaolasSecondScore = 95;
-const CaolasThirdScore = 106;
+// const CaolasFirstScore = 109;
+// const CaolasSecondScore = 95;
+// const CaolasThirdScore = 106;
 
-const CaolasAverageScore =
-  (CaolasFirstScore + CaolasSecondScore + CaolasThirdScore) / 3;
+// const CaolasAverageScore =
+//   (CaolasFirstScore + CaolasSecondScore + CaolasThirdScore) / 3;
 
-if (
-  delphinsAverageScore > CaolasAverageScore &&
-  delphinsAverageScore > 100 &&
-  CaolasAverageScore > 100
-) {
-  console.log(`delphins' average score is higher than Caolas'`);
-} else if (delphinsAverageScore === CaolasAverageScore) {
-  console.log("delphins' average score is same as Caolas'");
-} else if (
-  delphinsAverageScore < CaolasAverageScore &&
-  delphinsAverageScore > 100 &&
-  CaolasAverageScore > 100
-) {
-  console.log(`Caolas' average score is higher than delphins'`);
-} else {
-  console.log("No team wins the trophy");
-}
+// if (
+//   delphinsAverageScore > CaolasAverageScore &&
+//   delphinsAverageScore > 100 &&
+//   CaolasAverageScore > 100
+// ) {
+//   console.log(`delphins' average score is higher than Caolas'`);
+// } else if (delphinsAverageScore === CaolasAverageScore) {
+//   console.log("delphins' average score is same as Caolas'");
+// } else if (
+//   delphinsAverageScore < CaolasAverageScore &&
+//   delphinsAverageScore > 100 &&
+//   CaolasAverageScore > 100
+// ) {
+//   console.log(`Caolas' average score is higher than delphins'`);
+// } else {
+//   console.log("No team wins the trophy");
+// // }
+
+// const trueSana = (Arr) => Arr.filter((e) => e).length;
+// console.log(trueSana([true, true, true, false, true, 1, 2, 3, true]));
+
+// const specialReverse = (string, firstWord) =>
+//   string
+//     .split(" ")
+//     .map((word) =>
+//       word[0] == firstWord ? word.split("").reverse().join("") : word
+//     )
+//     .join(" ");
+
+// console.log(specialReverse(string, "y"));
+
+let string = "word, ali, malika, yupiterka";
+const specialReverse = (str, char) => {
+  const Arr = str.split(" ");
+  let result = "";
+  for (let i = 0; i < Arr.length; i++) {
+    if (Arr[i][0] == char && Arr[i].length >= 6) {
+      result += Arr[i].split("").reverse().join("") + " ";
+    } else {
+      result += Arr[i] + " ";
+    }
+  }
+  return result;
+};
+
+console.log(specialReverse(string, "y"));
