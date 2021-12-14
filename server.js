@@ -89,17 +89,33 @@
 // console.log(specialReverse(string, "y"));
 
 let string = "word, ali, malika, yupiterka";
-const specialReverse = (str, char) => {
-  const Arr = str.split(" ");
-  let result = "";
-  for (let i = 0; i < Arr.length; i++) {
-    if (Arr[i][0] == char && Arr[i].length >= 6) {
-      result += Arr[i].split("").reverse().join("") + " ";
-    } else {
-      result += Arr[i] + " ";
-    }
-  }
-  return result;
+// const specialReverse = (str, char) => {
+//   const Arr = str.split(" ");
+//   let result = "";
+//   for (let i = 0; i < Arr.length; i++) {
+//     if (Arr[i][0] == char && Arr[i].length >= 6) {
+//       result += Arr[i].split("").reverse().join("") + " ";
+//     } else {
+//       result += Arr[i] + " ";
+//     }
+//   }
+//   return result;
+// };
+
+// console.log(specialReverse(string, "y"));
+
+// const makeTitle = (Arr) => {
+//   const arr = Arr.split(" ");
+//   for (let i in Arr) {
+//     console.log(arr[i][0].toUpperCase());
+//   }
+// };
+
+// makeTitle("assalomu aleykum aziz yurdoshlar");
+
+const numInStr = (str) => {
+  const elem = str.split(" ");
+  return elem;
 };
 
-console.log(specialReverse(string, "y"));
+console.log(numInStr("ale, Vali, jahongir"));
