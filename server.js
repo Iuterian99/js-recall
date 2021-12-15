@@ -113,9 +113,53 @@ let string = "word, ali, malika, yupiterka";
 
 // makeTitle("assalomu aleykum aziz yurdoshlar");
 
-const numInStr = (str) => {
-  const elem = str.split(" ");
-  return elem;
-};
+// const numInStr = (str) => {
+//   const elem = str.split(" ");
+//   return elem;
+// };
 
-console.log(numInStr("ale, Vali, jahongir"));
+// console.log(numInStr("ale, Vali, jahongir"));
+
+class cal {
+  constructor(num1, num2) {
+    this.num1 = num1;
+    this.num2 = num2;
+  }
+
+  setSum() {
+    return this.num1 + this.num2;
+  }
+
+  getSum() {
+    return this.setSum();
+  }
+
+  setSub() {
+    return this.num1 - this.num2;
+  }
+
+  getSub() {
+    return this.setSub();
+  }
+
+  setMul() {
+    return this.num1 * this.num2;
+  }
+
+  getMul() {
+    return this.setMul();
+  }
+  setDiv() {
+    return this.num1 / this.num2;
+  }
+
+  getDiv() {
+    return this.setDiv();
+  }
+}
+
+const Calculator = new cal(9, 3);
+console.log(`${Calculator.num1} + ${Calculator.num2} = ${Calculator.getSum()}`);
+console.log(`${Calculator.num1} - ${Calculator.num2} = ${Calculator.getSub()}`);
+console.log(`${Calculator.num1} * ${Calculator.num2} = ${Calculator.getMul()}`);
+console.log(`${Calculator.num1} / ${Calculator.num2} = ${Calculator.getDiv()}`);
