@@ -88,7 +88,7 @@
 
 // console.log(specialReverse(string, "y"));
 
-let string = "word, ali, malika, yupiterka";
+// let string = "word, ali, malika, yupiterka";
 // const specialReverse = (str, char) => {
 //   const Arr = str.split(" ");
 //   let result = "";
@@ -120,46 +120,89 @@ let string = "word, ali, malika, yupiterka";
 
 // console.log(numInStr("ale, Vali, jahongir"));
 
-class cal {
-  constructor(num1, num2) {
-    this.num1 = num1;
-    this.num2 = num2;
+// class cal {
+//   constructor(num1, num2) {
+//     this.num1 = num1;
+//     this.num2 = num2;
+//   }
+
+//   setSum() {
+//     return this.num1 + this.num2;
+//   }
+
+//   getSum() {
+//     return this.setSum();
+//   }
+
+//   setSub() {
+//     return this.num1 - this.num2;
+//   }
+
+//   getSub() {
+//     return this.setSub();
+//   }
+
+//   setMul() {
+//     return this.num1 * this.num2;
+//   }
+
+//   getMul() {
+//     return this.setMul();
+//   }
+//   setDiv() {
+//     return this.num1 / this.num2;
+//   }
+
+//   getDiv() {
+//     return this.setDiv();
+//   }
+// }
+
+// const Calculator = new cal(9, 3);
+// console.log(`${Calculator.num1} + ${Calculator.num2} = ${Calculator.getSum()}`);
+// console.log(`${Calculator.num1} - ${Calculator.num2} = ${Calculator.getSub()}`);
+// console.log(`${Calculator.num1} * ${Calculator.num2} = ${Calculator.getMul()}`);
+// console.log(`${Calculator.num1} / ${Calculator.num2} = ${Calculator.getDiv()}`);
+
+class Array {
+  constructor(Arr) {
+    this.Arr = Arr;
   }
 
-  setSum() {
-    return this.num1 + this.num2;
+  filter(son) {
+    let arr = [];
+    for (let i of this.Arr) {
+      if (i === son) {
+        arr.push(i);
+      }
+    }
+    return arr;
   }
 
-  getSum() {
-    return this.setSum();
-  }
-
-  setSub() {
-    return this.num1 - this.num2;
-  }
-
-  getSub() {
-    return this.setSub();
-  }
-
-  setMul() {
-    return this.num1 * this.num2;
-  }
-
-  getMul() {
-    return this.setMul();
-  }
-  setDiv() {
-    return this.num1 / this.num2;
-  }
-
-  getDiv() {
-    return this.setDiv();
+  find(son) {
+    for (let i of this.Arr) {
+      if (this.Arr[i] === son) {
+        return son;
+      }
+    }
   }
 }
 
-const Calculator = new cal(9, 3);
-console.log(`${Calculator.num1} + ${Calculator.num2} = ${Calculator.getSum()}`);
-console.log(`${Calculator.num1} - ${Calculator.num2} = ${Calculator.getSub()}`);
-console.log(`${Calculator.num1} * ${Calculator.num2} = ${Calculator.getMul()}`);
-console.log(`${Calculator.num1} / ${Calculator.num2} = ${Calculator.getDiv()}`);
+const newArray = new Array([
+  1,
+  2,
+  3,
+  1,
+  4,
+  true,
+  true,
+  false,
+  "A",
+  "b",
+  "b",
+  false,
+  1,
+  1,
+]);
+console.log(newArray.filter(1));
+console.log(newArray.find(b));
