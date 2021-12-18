@@ -204,5 +204,6 @@ const newArray = new Array([
   1,
   1,
 ]);
+let b = "a";
 console.log(newArray.filter(1));
 console.log(newArray.find(b));
