@@ -207,16 +207,3 @@
 // let b = "a";
 // console.log(newArray.filter(1));
 // console.log(newArray.find(b));
-
-const day = "tuesday";
-
-switch (day) {
-  case "monday":
-    console.log("dushanba");
-    break;
-  case "tuesday":
-    console.log("seshanba");
-    break;
-  default:
-    console.log("unday kun yo`q");
-}
