@@ -164,46 +164,59 @@
 // console.log(`${Calculator.num1} * ${Calculator.num2} = ${Calculator.getMul()}`);
 // console.log(`${Calculator.num1} / ${Calculator.num2} = ${Calculator.getDiv()}`);
 
-class Array {
-  constructor(Arr) {
-    this.Arr = Arr;
-  }
+// class Array {
+//   constructor(Arr) {
+//     this.Arr = Arr;
+//   }
 
-  filter(son) {
-    let arr = [];
-    for (let i of this.Arr) {
-      if (i === son) {
-        arr.push(i);
-      }
-    }
-    return arr;
-  }
+//   filter(son) {
+//     let arr = [];
+//     for (let i of this.Arr) {
+//       if (i === son) {
+//         arr.push(i);
+//       }
+//     }
+//     return arr;
+//   }
 
-  find(son) {
-    for (let i of this.Arr) {
-      if (this.Arr[i] === son) {
-        return son;
-      }
-    }
-  }
+//   find(son) {
+//     for (let i of this.Arr) {
+//       if (this.Arr[i] === son) {
+//         return son;
+//       }
+//     }
+//   }
+// }
+
+// const newArray = new Array([
+//   1,
+//   2,
+//   3,
+//   1,
+//   4,
+//   true,
+//   true,
+//   false,
+//   "A",
+//   "b",
+//   "b",
+//   false,
+//   1,
+//   1,
+// ]);
+// let b = "a";
+// console.log(newArray.filter(1));
+// console.log(newArray.find(b));
+
+const day = "tuesday";
+
+switch (day) {
+  case "monday":
+    console.log("dushanba");
+    break;
+  case "tuesday":
+    console.log("seshanba");
+    break;
+  default:
+    console.log("unday kun yo`q");
 }
-
-const newArray = new Array([
-  1,
-  2,
-  3,
-  1,
-  4,
-  true,
-  true,
-  false,
-  "A",
-  "b",
-  "b",
-  false,
-  1,
-  1,
-]);
-let b = "a";
-console.log(newArray.filter(1));
-console.log(newArray.find(b));
